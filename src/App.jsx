@@ -34,6 +34,8 @@ import { closeDropdown } from "./features/uiSlice";
 import Dropdown from "./components/common/DropDown";
 import NewsLetter from "./components/common/NewsLetter";
 import PropertyDetailPage from "./pages/PropertyDetailPage";
+import LoginPage from "./components/authentification/LoginPage";
+import RegisterPage from "./components/authentification/RegisterPage";
 function App() {
   const [showButton, setShowButton] = useState(false);
   const dispatch = useDispatch();
@@ -131,6 +133,8 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/connexion" element={<LoginPage />} />
+          <Route path="/inscription" element={<RegisterPage />} />
           <Route path="/detail" element={<PropertyDetailPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
