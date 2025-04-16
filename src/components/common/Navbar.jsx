@@ -12,7 +12,6 @@ import {
 } from "../../features/uiSlice";
 import { navLinks } from "../../data/navLinks";
 import SingleLink from "./SingleLink";
-import LoginModal from "../authentification/LoginModal";
 
 const Navbar = () => {
   const rootDoc = document.querySelector(":root");
@@ -21,7 +20,6 @@ const Navbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  // const isAuthenticated = useSelector((state) => state.auth.isAuthenticated); // Assuming you have this state
 
   // Dark mode toggle
   const handleDarkMode = () => {
@@ -175,12 +173,12 @@ const Navbar = () => {
             </form>
 
             {/*----------------------------- Dark mode toggle-------------------------------------------------- */}
-            <div
+            {/* <div
               className="bg-white shadow-md icon-box dark:bg-dark-light hover:shadow-lg hover:bg-transparent"
               onClick={handleDarkMode}
             >
               {darkMode ? <FiSun /> : <FiMoon />}
-            </div>
+            </div> */}
 
             {/*------------------------------- Mobile Menu Toogle------------------------- */}
             <div

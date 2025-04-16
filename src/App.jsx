@@ -36,6 +36,8 @@ import NewsLetter from "./components/common/NewsLetter";
 import PropertyDetailPage from "./pages/PropertyDetailPage";
 import LoginPage from "./components/authentification/LoginPage";
 import RegisterPage from "./components/authentification/RegisterPage";
+import { GetInTouch } from "./components/home/home-3";
+import { MiseEnRelation } from "./components/home/home-1";
 function App() {
   const [showButton, setShowButton] = useState(false);
   const dispatch = useDispatch();
@@ -136,6 +138,7 @@ function App() {
           <Route path="/connexion" element={<LoginPage />} />
           <Route path="/inscription" element={<RegisterPage />} />
           <Route path="/detail" element={<PropertyDetailPage />} />
+          <Route path="mise-en-relation" element={<MiseEnRelation />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>

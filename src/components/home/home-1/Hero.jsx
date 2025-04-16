@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -37,7 +38,7 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mt-6 btn btn-primary"
         >
-          Mise en relation
+          <Link to="mise-en-relation">Mise en relation</Link>
         </motion.button>
 
         <div className="mt-6 text-center flex-align-center gap-x-6">
